@@ -18,7 +18,7 @@ while enemy == family_name do
     enemy = ["Corleone", "Tattaglia", "Barzini",  "Cuneo", "Brazzi"].sample
 end
 
-anim ("CONGRADULATIONS! You just married into The #{family_name} Family. They are a well established family in New York, and you couldn't be happier!")
+anim ("CONGRATULATIONS! You just married into The #{family_name} Family. They are a well established family in New York, and you couldn't be happier!")
 
 anim ("...there's but one thing, the head of the #{family_name} family is your father-in-law, and you recently found out he's actually the head of the family mafia. DUN DUN DUN")
 
@@ -33,7 +33,7 @@ if answer1 == 'N'
     anim ("Your father-in-law says thats perfectly fine, and you go about the rest of your night. But when you are walking to the car to go home, BOOM you get shot in the back. Ouch! End of game.")
 elsif answer1 == 'Y'
     anim ("He asks you to deliver a package to The #{enemy} Family on the other side of town on behalf of the #{family_name} Family. You take the package and say you'll do it ASAP.")
-    anim ("As you're making your way to deliver the package you can't help but wonder what that smell is..? You realize it's coming from the package, do open the package and find out why it smells so rancid, do you deliver it to The #{enemy}, or you take it to the police? Enter 'deliver', 'sneak a peak', or 'police'.")
+    anim ("As you're making your way to deliver the package you can't help but wonder what that smell is..? You realize it's coming from the package, do you open the package and find out why it smells so rancid, do you deliver it to The #{enemy}, or you take it to the police? Enter 'deliver', 'sneak a peak', or 'police'.")
     answer2 = gets.chomp.capitalize
     if answer2 == 'Sneak a peak'
         anim ("You open the box and GAHH it's a finger! You change your name, leave your spouse and get the heck outta town! End of game.")
@@ -84,14 +84,14 @@ elsif answer1 == 'Y'
                                     if options3 == 0
                                         anim ("All the other families find out you are behind everything, and they form an alliance against you. Your demise is innevitable, in fact it's right now BOOOM! Fin.")
                                     elsif options3 == 1
-                                        anim ("Your plan worked all the other families killed each other and you made it out on top. CONGRADULATIONS you now have FULL control of all New York and have been fully consumed by E.V.I.L.")
+                                        anim ("Your plan worked all the other families killed each other and you made it out on top. CONGRATULATIONS you now have FULL control of all New York and have been fully consumed by E.V.I.L.")
                                     end
                                 elsif answer8 == 'Shady'
                                     options4 = [1,0].sample
                                     if options4 == 0
                                         anim ("One of members decides to turn on you and let the other famoly know of your assassination plan to take over and a hit is put on you. Dang your out. Game Over")
                                     elsif options4 == 1
-                                        anim ("Your ass attemp worked, all the other families are under your rule. You are Mob Boss! Congrats, for now. You Win!!!")
+                                        anim ("Your assassination worked, all the other families are under your rule. You are the Mob Boss! Congrats, for now. You Win!!!")
                                     end
                                 end
                             end
